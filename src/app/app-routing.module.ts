@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OperaBasComponent } from './formularios/opera-bas/opera-bas.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'', component: ProductListComponent},
+  {path:'suma', component: OperaBasComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
